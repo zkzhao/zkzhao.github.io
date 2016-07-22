@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="js,javascript," />
+  <meta name="keywords" content="Docker," />
 
 
 
@@ -84,19 +84,21 @@
 
 
 
-<meta name="description" content="JS
-for in 循环中如何取得序号index？123for (let key in item) &amp;#123;    console.log(Object.keys(item).indexOf(key));&amp;#125;">
+<meta name="description" content="docker 需要注意的事情：
+Docker Quickstart Terminal可以进行docker命令的操作，但使用操作系统的命令行工具进行docker命令的操作会报错，docker-machine命令却可以正常使用，这是因为在环境变量中缺少docker的指向。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="备忘小贴士">
-<meta property="og:url" content="http://zkzhao.github.io/2016/06/27/备忘小贴士/index.html">
+<meta property="og:title" content="Docker学习备忘">
+<meta property="og:url" content="http://zkzhao.github.io/2016-06-22-docker.html">
 <meta property="og:site_name" content="ZKZhao's Life">
-<meta property="og:description" content="JS
-for in 循环中如何取得序号index？123for (let key in item) &amp;#123;    console.log(Object.keys(item).indexOf(key));&amp;#125;">
-<meta property="og:updated_time" content="2016-07-21T07:34:18.509Z">
+<meta property="og:description" content="docker 需要注意的事情：
+Docker Quickstart Terminal可以进行docker命令的操作，但使用操作系统的命令行工具进行docker命令的操作会报错，docker-machine命令却可以正常使用，这是因为在环境变量中缺少docker的指向。">
+<meta property="og:image" content="http://7xk7wj.com1.z0.glb.clouddn.com/blog_docker.png">
+<meta property="og:updated_time" content="2016-07-21T08:31:58.436Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="备忘小贴士">
-<meta name="twitter:description" content="JS
-for in 循环中如何取得序号index？123for (let key in item) &amp;#123;    console.log(Object.keys(item).indexOf(key));&amp;#125;">
+<meta name="twitter:title" content="Docker学习备忘">
+<meta name="twitter:description" content="docker 需要注意的事情：
+Docker Quickstart Terminal可以进行docker命令的操作，但使用操作系统的命令行工具进行docker命令的操作会报错，docker-machine命令却可以正常使用，这是因为在环境变量中缺少docker的指向。">
+<meta name="twitter:image" content="http://7xk7wj.com1.z0.glb.clouddn.com/blog_docker.png">
 
 
 
@@ -117,9 +119,9 @@ for in 循环中如何取得序号index？123for (let key in item) &amp;#123;   
 
 
 
-  <link rel="canonical" href="http://zkzhao.github.io/2016/06/27/备忘小贴士/"/>
+  <link rel="canonical" href="http://zkzhao.github.io/2016-06-22-docker.html"/>
 
-  <title> 备忘小贴士 | ZKZhao's Life </title>
+  <title> Docker学习备忘 | ZKZhao's Life </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -229,7 +231,7 @@ for in 循环中如何取得序号index？123for (let key in item) &amp;#123;   
             
             
               
-                备忘小贴士
+                Docker学习备忘
               
             
           </h1>
@@ -241,8 +243,8 @@ for in 循环中如何取得序号index？123for (let key in item) &amp;#123;   
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-06-27T15:46:53+08:00" content="2016-06-27">
-              2016-06-27
+            <time itemprop="dateCreated" datetime="2016-06-22T16:47:21+08:00" content="2016-06-22">
+              2016-06-22
             </time>
           </span>
 
@@ -255,8 +257,8 @@ for in 循环中如何取得序号index？123for (let key in item) &amp;#123;   
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/javascript/" itemprop="url" rel="index">
-                    <span itemprop="name">javascript</span>
+                  <a href="/categories/运维工具/" itemprop="url" rel="index">
+                    <span itemprop="name">运维工具</span>
                   </a>
                 </span>
 
@@ -271,8 +273,8 @@ for in 循环中如何取得序号index？123for (let key in item) &amp;#123;   
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/06/27/备忘小贴士/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/06/27/备忘小贴士/" itemprop="commentsCount"></span>
+                <a href="/2016-06-22-docker.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016-06-22-docker.html" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -282,7 +284,7 @@ for in 循环中如何取得序号index？123for (let key in item) &amp;#123;   
 
           
           
-             <span id="/2016/06/27/备忘小贴士/" class="leancloud_visitors" data-flag-title="备忘小贴士">
+             <span id="/2016-06-22-docker.html" class="leancloud_visitors" data-flag-title="Docker学习备忘">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -304,31 +306,56 @@ for in 循环中如何取得序号index？123for (let key in item) &amp;#123;   
       
 
       
-        <h1 id="JS"><a href="#JS" class="headerlink" title="JS"></a>JS</h1><ol>
-<li>for in 循环中如何取得序号index？<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> (<span class="keyword">let</span> key <span class="keyword">in</span> item) &#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="built_in">Object</span>.keys(item).indexOf(key));</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-</ol>
+        <p><img src="http://7xk7wj.com1.z0.glb.clouddn.com/blog_docker.png" alt="docker"></p>
+<h2 id="docker-需要注意的事情："><a href="#docker-需要注意的事情：" class="headerlink" title="docker 需要注意的事情："></a>docker 需要注意的事情：</h2><blockquote>
+<p>Docker Quickstart Terminal可以进行docker命令的操作，但使用操作系统的命令行工具进行docker命令的操作会报错，docker-machine命令却可以正常使用，这是因为在环境变量中缺少docker的指向。</p>
+</blockquote>
 <a id="more"></a>
 <ol>
-<li><p>form表单取值 json序列化？</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">$.fn.serializeFormJSON = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="keyword">var</span> o = &#123;&#125;;</div><div class="line">  <span class="keyword">var</span> a = <span class="keyword">this</span>.serializeArray();</div><div class="line">  $.each(a, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">      <span class="keyword">if</span> (o[<span class="keyword">this</span>.name]) &#123;</div><div class="line">          <span class="keyword">if</span> (!o[<span class="keyword">this</span>.name].push) &#123;</div><div class="line">              o[<span class="keyword">this</span>.name] = [o[<span class="keyword">this</span>.name]];</div><div class="line">          &#125;</div><div class="line">          o[<span class="keyword">this</span>.name].push(<span class="keyword">this</span>.value || <span class="string">''</span>);</div><div class="line">      &#125; <span class="keyword">else</span> &#123;</div><div class="line">          o[<span class="keyword">this</span>.name] = <span class="keyword">this</span>.value || <span class="string">''</span>;</div><div class="line">      &#125;</div><div class="line">  &#125;);</div><div class="line">  <span class="keyword">return</span> o;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<li>首先，保证docker-machine虚拟机处于运行状态</li>
+<li>在操作系统自带命令行工具环境下 <code>docker-machine env</code></li>
+<li>复制最后一行rem的命令,例如windos系统下是：<code>@FOR /f &quot;tokens=*&quot; %i IN (&#39;docker-machine env&#39;) DO @%i</code></li>
+<li>貌似每次重启系统都需要操作一次？</li>
+</ol>
+<blockquote>
+<p>如何理解容器和镜像。</p>
+</blockquote>
+<ol>
+<li><p>镜像（Image），通过Docker Hub下载或<code>docker commit</code>创建的只读层</p>
 </li>
-<li><p>url取参数值</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">urlArgs</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="keyword">var</span> args= &#123;&#125;;</div><div class="line">  <span class="keyword">var</span> query= location.search.substring(<span class="number">1</span>);</div><div class="line">  <span class="keyword">var</span> pairs= query.split(<span class="string">"&amp;"</span>);</div><div class="line">  <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>; i&lt;pairs.length; i++)&#123;</div><div class="line">    <span class="keyword">var</span> pos= pairs[i].indexOf(<span class="string">'='</span>);</div><div class="line">    <span class="keyword">if</span>(pos == <span class="number">-1</span>) <span class="keyword">continue</span>;</div><div class="line">    <span class="keyword">var</span> name= pairs[i].substring(<span class="number">0</span>,pos);</div><div class="line">    <span class="keyword">var</span> value= pairs[i].substring(pos+<span class="number">1</span>);</div><div class="line">    value= <span class="built_in">decodeURIComponent</span>(value);</div><div class="line">    args[name]= value;</div><div class="line">  &#125;</div><div class="line">  <span class="keyword">return</span> args</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<li><p>容器（Container），通过<code>run</code>，在镜像的基础上创建一个改动层。容器可以运行、停止、删除、…，已经停止的容器中的数据并不会消失，而是被存储在相应的“改动层”中。</p>
+<p><em>总结：容器= 镜像+改动层</em></p>
 </li>
 </ol>
-<h1 id="Atom"><a href="#Atom" class="headerlink" title="Atom"></a>Atom</h1><ol>
-<li><p>mac下面隐藏目录树中的 <code>.DS_Store</code>文件：</p>
-<ul>
-<li>Setting——Packages——搜索tree-view——setting——Hide Igonored Names</li>
-</ul>
+<blockquote>
+<p>docker 搭建开发环境实战</p>
+</blockquote>
+<p>… …  留位填坑</p>
+<h2 id="docker的一些命令："><a href="#docker的一些命令：" class="headerlink" title="docker的一些命令："></a>docker的一些命令：</h2><ul>
+<li><p>查看镜像列表：<code>docker images</code></p>
 </li>
-<li><p>一些好用的插件：</p>
-<ul>
-<li>pigments、minimap、file-icons</li>
-<li>Markdown-scroll-sync：这个我觉得是必装的。可以让左边的markdown和右边的预览同步，左边往下翻了，右边也下去。</li>
-<li>Markdown-pdf：输出PDF就靠它了，直接输出在md文档所在目录。</li>
+<li><p>查看运行中容器列表： <code>docker ps</code></p>
+</li>
+<li><p>查看所有容器列表：<code>docker ps -a</code></p>
+</li>
+<li><p>运行一个容器：<code>docker run -it ubuntu /bin/bash</code></p>
+</li>
+<li><p>指定容器的名称： 在 <code>docker run</code> 的时候用 <code>--name</code> 参数指定容器的名称。</p>
+</li>
+<li><p>退出容器：<code>exit</code></p>
+</li>
+<li><p>删除容器：<code>docker rm ***</code> ， 删除镜像：<code>docker rmi ***</code></p>
+</li>
+<li><p>镜像改动历史： <code>docker history ***</code></p>
+</li>
 </ul>
+<p>本文参考的文章：</p>
+<ol>
+<li><p><a href="https://segmentfault.com/a/1190000002766882" target="_blank" rel="external">深入 Docker：容器和镜像</a></p>
+</li>
+<li><p><a href="http://dockone.io/article/783" target="_blank" rel="external">理解docker命令</a></p>
+</li>
+<li><p><a href="http://tech.uc.cn/?p=2726" target="_blank" rel="external">利用Docker构建开发环境</a></p>
 </li>
 </ol>
 
@@ -353,9 +380,7 @@ for in 循环中如何取得序号index？123for (let key in item) &amp;#123;   
       
         <div class="post-tags">
           
-            <a href="/tags/js/" rel="tag">#js</a>
-          
-            <a href="/tags/javascript/" rel="tag">#javascript</a>
+            <a href="/tags/Docker/" rel="tag">#Docker</a>
           
         </div>
       
@@ -364,16 +389,12 @@ for in 循环中如何取得序号index？123for (let key in item) &amp;#123;   
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/06/27/React-Native基于windows的android环境搭建/" rel="next" title="React-Native基于windows的android环境搭建">
-                <i class="fa fa-chevron-left"></i> React-Native基于windows的android环境搭建
-              </a>
-            
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/07/12/generator/" rel="prev" title="Yeoman 快速构建新项目目录结构脚手架工具">
-                Yeoman 快速构建新项目目录结构脚手架工具 <i class="fa fa-chevron-right"></i>
+              <a href="/2016-06-27-React-Native基于windows的android环境搭建.html" rel="prev" title="React-Native基于windows的android环境搭建">
+                React-Native基于windows的android环境搭建 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -400,8 +421,8 @@ for in 循环中如何取得序号index？123for (let key in item) &amp;#123;   
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/06/27/备忘小贴士/"
-           data-title="备忘小贴士" data-url="http://zkzhao.github.io/2016/06/27/备忘小贴士/">
+      <div class="ds-thread" data-thread-key="2016-06-22-docker.html"
+           data-title="Docker学习备忘" data-url="http://zkzhao.github.io/2016-06-22-docker.html">
       </div>
     
   </div>
@@ -503,7 +524,7 @@ for in 循环中如何取得序号index？123for (let key in item) &amp;#123;   
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#JS"><span class="nav-number">1.</span> <span class="nav-text">JS</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Atom"><span class="nav-number">2.</span> <span class="nav-text">Atom</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#docker-需要注意的事情："><span class="nav-number">1.</span> <span class="nav-text">docker 需要注意的事情：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#docker的一些命令："><span class="nav-number">2.</span> <span class="nav-text">docker的一些命令：</span></a></li></ol></div>
             
           </div>
         </section>

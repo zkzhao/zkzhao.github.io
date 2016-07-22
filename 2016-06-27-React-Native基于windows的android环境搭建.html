@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Yeoman," />
+  <meta name="keywords" content="React-Native," />
 
 
 
@@ -84,30 +84,22 @@
 
 
 
-<meta name="description" content="因为工作中经常需要创建新的项目目录（不要问我为什么），每次开始新的项目都需要新建一次前端目录结构、流程化构建等等，后来发现使用Yeoman新建别工程目录很方便，就想自己也定制一套，慢慢完善。
-
-安装配置
-全局安装yo和yeoman-generator： npm install -g yo ， npm install --save yeoman-generator
-创建一个以 generator-">
+<meta name="description" content="首先要说一下React-Native对windos环境配置的问题，用mac按照教程从开始到结束只要安装完，就可以无错运行起来。windows各种报错，研究了2天还是很多错误不知道为什么。就在要放弃治疗的时候，他成功运行起来了。
+注意点一 ：翻墙下载 Android Studio、Android SDK、npm install -g react-native-cli、Genymotion（安卓模拟器">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Yeoman 快速构建新项目目录结构脚手架工具">
-<meta property="og:url" content="http://zkzhao.github.io/2016/07/12/generator/index.html">
+<meta property="og:title" content="React-Native基于windows的android环境搭建">
+<meta property="og:url" content="http://zkzhao.github.io/2016-06-27-React-Native基于windows的android环境搭建.html">
 <meta property="og:site_name" content="ZKZhao's Life">
-<meta property="og:description" content="因为工作中经常需要创建新的项目目录（不要问我为什么），每次开始新的项目都需要新建一次前端目录结构、流程化构建等等，后来发现使用Yeoman新建别工程目录很方便，就想自己也定制一套，慢慢完善。
-
-安装配置
-全局安装yo和yeoman-generator： npm install -g yo ， npm install --save yeoman-generator
-创建一个以 generator-">
-<meta property="og:image" content="http://7xk7wj.com1.z0.glb.clouddn.com/blog_yeoman.jpg">
-<meta property="og:updated_time" content="2016-07-21T07:33:50.050Z">
+<meta property="og:description" content="首先要说一下React-Native对windos环境配置的问题，用mac按照教程从开始到结束只要安装完，就可以无错运行起来。windows各种报错，研究了2天还是很多错误不知道为什么。就在要放弃治疗的时候，他成功运行起来了。
+注意点一 ：翻墙下载 Android Studio、Android SDK、npm install -g react-native-cli、Genymotion（安卓模拟器">
+<meta property="og:image" content="http://7xk7wj.com1.z0.glb.clouddn.com/blog_gyperror.jpg">
+<meta property="og:image" content="http://7xk7wj.com1.z0.glb.clouddn.com/blog_adblist.jpg">
+<meta property="og:updated_time" content="2016-07-21T07:36:20.582Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Yeoman 快速构建新项目目录结构脚手架工具">
-<meta name="twitter:description" content="因为工作中经常需要创建新的项目目录（不要问我为什么），每次开始新的项目都需要新建一次前端目录结构、流程化构建等等，后来发现使用Yeoman新建别工程目录很方便，就想自己也定制一套，慢慢完善。
-
-安装配置
-全局安装yo和yeoman-generator： npm install -g yo ， npm install --save yeoman-generator
-创建一个以 generator-">
-<meta name="twitter:image" content="http://7xk7wj.com1.z0.glb.clouddn.com/blog_yeoman.jpg">
+<meta name="twitter:title" content="React-Native基于windows的android环境搭建">
+<meta name="twitter:description" content="首先要说一下React-Native对windos环境配置的问题，用mac按照教程从开始到结束只要安装完，就可以无错运行起来。windows各种报错，研究了2天还是很多错误不知道为什么。就在要放弃治疗的时候，他成功运行起来了。
+注意点一 ：翻墙下载 Android Studio、Android SDK、npm install -g react-native-cli、Genymotion（安卓模拟器">
+<meta name="twitter:image" content="http://7xk7wj.com1.z0.glb.clouddn.com/blog_gyperror.jpg">
 
 
 
@@ -128,9 +120,9 @@
 
 
 
-  <link rel="canonical" href="http://zkzhao.github.io/2016/07/12/generator/"/>
+  <link rel="canonical" href="http://zkzhao.github.io/2016-06-27-React-Native基于windows的android环境搭建.html"/>
 
-  <title> Yeoman 快速构建新项目目录结构脚手架工具 | ZKZhao's Life </title>
+  <title> React-Native基于windows的android环境搭建 | ZKZhao's Life </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -240,7 +232,7 @@
             
             
               
-                Yeoman 快速构建新项目目录结构脚手架工具
+                React-Native基于windows的android环境搭建
               
             
           </h1>
@@ -252,8 +244,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-12T16:16:21+08:00" content="2016-07-12">
-              2016-07-12
+            <time itemprop="dateCreated" datetime="2016-06-27T15:15:52+08:00" content="2016-06-27">
+              2016-06-27
             </time>
           </span>
 
@@ -266,8 +258,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/工程化/" itemprop="url" rel="index">
-                    <span itemprop="name">工程化</span>
+                  <a href="/categories/react/" itemprop="url" rel="index">
+                    <span itemprop="name">react</span>
                   </a>
                 </span>
 
@@ -282,8 +274,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/07/12/generator/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/12/generator/" itemprop="commentsCount"></span>
+                <a href="/2016-06-27-React-Native基于windows的android环境搭建.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016-06-27-React-Native基于windows的android环境搭建.html" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -293,7 +285,7 @@
 
           
           
-             <span id="/2016/07/12/generator/" class="leancloud_visitors" data-flag-title="Yeoman 快速构建新项目目录结构脚手架工具">
+             <span id="/2016-06-27-React-Native基于windows的android环境搭建.html" class="leancloud_visitors" data-flag-title="React-Native基于windows的android环境搭建">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -315,50 +307,45 @@
       
 
       
-        <p>因为工作中经常需要创建新的项目目录（不要问我为什么），每次开始新的项目都需要新建一次前端目录结构、流程化构建等等，后来发现使用Yeoman新建别工程目录很方便，就想自己也定制一套，慢慢完善。</p>
-<p><img src="http://7xk7wj.com1.z0.glb.clouddn.com/blog_yeoman.jpg" alt="yeoman脚手架"></p>
-<h2 id="安装配置"><a href="#安装配置" class="headerlink" title="安装配置"></a>安装配置</h2><ul>
-<li>全局安装yo和yeoman-generator： <code>npm install -g yo</code> ， <code>npm install --save yeoman-generator</code></li>
-<li>创建一个以 <code>generator-</code> 开头的文件夹，例如： <code>generator-name</code></li>
-<li>在命令行运行 <code>npm init</code> 来构建package.json文件，其中 <code>name</code> 属性必须以 <code>generator-</code> 前缀开头。</li>
-</ul>
+        <p>首先要说一下React-Native对windos环境配置的问题，用mac按照教程从开始到结束只要安装完，就可以无错运行起来。windows各种报错，研究了2天还是很多错误不知道为什么。就在要放弃治疗的时候，他成功运行起来了。</p>
+<h2 id="注意点一-：翻墙"><a href="#注意点一-：翻墙" class="headerlink" title="注意点一 ：翻墙"></a>注意点一 ：翻墙</h2><p>下载 Android Studio、Android SDK、<code>npm install -g react-native-cli</code>、Genymotion（安卓模拟器）都需要翻墙，不然速度非常慢，当下载失败的时候就会报错。</p>
+<p>解决办法：</p>
+<p>sdk可以使用国内镜像：<a href="http://www.androiddevtools.cn/" target="_blank" rel="external">http://www.androiddevtools.cn/</a>  （推荐使用腾讯的镜像，如果加速不明显，可以尝试重启电脑）</p>
+<p>npm 可以使用淘宝的cnpm镜像安装 react-native-cli。</p>
 <a id="more"></a>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="string">"name"</span>: <span class="string">"generator-name"</span>,</div><div class="line">  <span class="string">"version"</span>: <span class="string">"0.1.0"</span>,</div><div class="line">  <span class="string">"description"</span>: <span class="string">""</span>,</div><div class="line">  <span class="string">"files"</span>: [</div><div class="line">    <span class="string">"app"</span>,</div><div class="line">    <span class="string">"router"</span></div><div class="line">  ],</div><div class="line">  <span class="string">"keywords"</span>: [<span class="string">"yeoman-generator"</span>],</div><div class="line">  <span class="string">"dependencies"</span>: &#123;</div><div class="line">    <span class="string">"yeoman-generator"</span>: <span class="string">"^0.20.2"</span></div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="注意点二-：-SDK-安装不完整"><a href="#注意点二-：-SDK-安装不完整" class="headerlink" title="注意点二 ： SDK 安装不完整"></a>注意点二 ： SDK 安装不完整</h2><p>下载SDK包不完整会带来很多错误，根据官方文档的介绍，需要在SDK Manager中安装：</p>
+<ol>
+<li>Extras/HAXM installer加速驱动</li>
+<li>Extras/Android Support Repository</li>
+<li>Tools/Android SDK Tools</li>
+<li>Tools/Android SDK Platform-tools</li>
+<li>Tools/Android SDK Build-tools (23.0.1)（这个必须版本严格匹配23.0.1）</li>
+<li>Android 6.0 (API23)/SDK Platform (这个下面最好全装，使用模拟器需要Atom的相关包)</li>
+</ol>
+<p>结论：SDK只装API23版的就可以，剩下的小工具包，最好全装，不然有莫名的错误很难找到原因，反正用国内镜像速度快。</p>
+<h2 id="注意点三-：-android需要的各种环境变量"><a href="#注意点三-：-android需要的各种环境变量" class="headerlink" title="注意点三 ： android需要的各种环境变量"></a>注意点三 ： android需要的各种环境变量</h2><p>JAVA和Android的环境变量，一个都不能少，不然会提示找不到SDK</p>
+<ol>
+<li>JAVA_HOME</li>
+<li>ANDROID_HOME</li>
+<li>%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;    </li>
+<li>%ANDROID_HOME%\tools;%ANDROID_HOME%\platform-tools;</li>
+</ol>
+<h2 id="注意点四-：-react-native-init-MyProject-初始化项目，提示node-gyp-rebuild错误"><a href="#注意点四-：-react-native-init-MyProject-初始化项目，提示node-gyp-rebuild错误" class="headerlink" title="注意点四 ： react-native init MyProject 初始化项目，提示node-gyp rebuild错误"></a>注意点四 ： react-native init MyProject 初始化项目，提示node-gyp rebuild错误</h2><p>至今依然在纠结这个坑，虽然报错，但是最后还是能成功运行起来，个人猜测，应该是安装npm包的时候出现了编译c++的错误。</p>
+<p>查了一下node-gyp的资料，发现这是一个新版本node自带的c++编译扩展包，它需要c++和python的编译环境，我的工作电脑上有Microsoft Visual C++ 2013 Redistributable和python2.7，还安装了Cygwin（初期windows平台安装node需要借助Cygwin来安装，后来微软和node的作者一起合作，才有了现在的node安装包）,依然没有解决报错的问题，计划日后深入学习node后再来填这个坑，错误如下：</p>
+<p><img src="http://7xk7wj.com1.z0.glb.clouddn.com/blog_gyperror.jpg" alt="init error"></p>
+<h2 id="注意点五-：-Android模拟器"><a href="#注意点五-：-Android模拟器" class="headerlink" title="注意点五 ： Android模拟器"></a>注意点五 ： Android模拟器</h2><p>经过4号坑的折腾，已经身心俱疲，结果还是没搞定，算了，先试一下项目能不能跑起来吧</p>
+<p><code>react-native start</code> 起一个端口服务</p>
+<p><code>react-native run-android</code> 这里报错，主要是2号坑和3号坑，漫长的等待之后，提示我没有找到安卓模拟器。</p>
+<p>解决办法：</p>
+<p>打开Genymotion，命令行<code>adb devices</code> 查看当前可使用的安卓虚拟器列表，结果为空，说明确实没有，网上查了下，需要在setting的ADB下选中 Use custom Android SDK tools ，然后选择自己的SDK目录，换个姿势再来一次，什么？还是报错！准备放弃治疗了，重启电脑再试最后一次，没想到成功运行起来了。</p>
+<p><img src="http://7xk7wj.com1.z0.glb.clouddn.com/blog_adblist.jpg" alt="adb -l"></p>
+<p>都还没开始写代码，只是配置环境，就这么麻烦，所以还是建议有条件的朋友，在mac平台上进行开发，毕竟react的团队都是使用mac的，不怎么管windows的死活。</p>
+<p>最后，关于Genymotion模拟器调试的一些小技巧</p>
 <ul>
-<li><p>generator把app作为默认的子generator,当你使用 <code>yo name</code> 调用的是app子generator。可以通过 <code>yo name:subcommand</code> 命令来调用子generator，它会调用与subcommand完全一样的文件夹即子generator。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">├───package.json</div><div class="line">├───app/</div><div class="line">│   └───index.js</div><div class="line">└───router/</div><div class="line">    └───index.js</div></pre></td></tr></table></figure>
-</li>
-<li><p>实现generator的具体内容，可以在index.js中重写构造函数并添加自己的方法。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> generators = <span class="built_in">require</span>(<span class="string">'yeoman-generator'</span>);</div><div class="line"><span class="built_in">module</span>.exports = generators.Base.extend(&#123;</div><div class="line">  <span class="keyword">constructor</span>: function () &#123;</div><div class="line">    generators.Base.apply(<span class="keyword">this</span>, <span class="built_in">arguments</span>);</div><div class="line">    <span class="keyword">this</span>.option(<span class="string">'optionsName'</span>); </div><div class="line">  &#125;,</div><div class="line">  method1: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'method just ran'</span>);</div><div class="line">  &#125;,</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-</li>
-<li><p>在 generator-name 项目跟路径下执行  <code>npm link</code> 安装node模块依赖，创建软连接指向你的当前项目。</p>
-</li>
-<li>创建新文件夹，进入该文件夹命令行执行 <code>yo name</code> ，即可构建出你自己定制的 generator-name 项目结构。</li>
+<li>刷新界面： 按RR</li>
+<li>调出菜单： 在命令行输入adb shell input keyevent 82 或者 Ctrl+M</li>
+<li>chrome调试：　<code>http://localhost:8081/debugger-ui</code></li>
 </ul>
-<h2 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h2><p>Yeoman是按照优先级顺序依次执行所定义的方法。当你定义的函数名字是Yeoman定义的优先级函数名时，会自动将该函数列入到所在优先级队列中，否则就会列入到 default 优先层级队列中。</p>
-<ol>
-<li>initializing - 初始化一些状态之类的，通常是和用户输入的 options 或者 arguments 打交道，这个后面说。</li>
-<li>prompting - 和用户交互的时候（命令行问答之类的）调用。</li>
-<li>configuring - 保存配置文件（如 .babelrc、.editorconfig  等）。</li>
-<li>default - 如果函数名称如生命周期钩子不一样，则会被放进这个组。</li>
-<li>writing - 在这里写一些模板文件，generator特殊的文件（路由、控制器、等）。</li>
-<li>conflicts - 处理文件冲突，比如当前目录下已经有了同名文件。</li>
-<li>install - 开始安装依赖（npm、bower）。</li>
-<li>end - 安装结束、清除文件、设置good bye文案、等</li>
-</ol>
-<h2 id="可以使用的模块依赖、工具库"><a href="#可以使用的模块依赖、工具库" class="headerlink" title="可以使用的模块依赖、工具库"></a>可以使用的模块依赖、工具库</h2><ul>
-<li><a href="https://github.com/SBoudrias/Inquirer.js" target="_blank" rel="external">inquirer</a>：提供命令行交互的工具</li>
-<li><a href="https://github.com/yeoman/yosay" target="_blank" rel="external">yosay</a>：在命令行输出信息的时候，同时输出 Yeoman 的卡通人物</li>
-<li><a href="https://github.com/chalk/chalk" target="_blank" rel="external">chalk</a>：名字叫粉笔，可以给命令行输出各种不同的颜色。</li>
-<li>ejs： 模板引擎。</li>
-</ul>
-<h2 id="构建思路"><a href="#构建思路" class="headerlink" title="构建思路"></a>构建思路</h2><p>最基础的思路就是通过inquirer和用户交互，收集到需求后通过ejs模板引擎构建出需要的各类文件，最后安装npm、bower依赖。<br>这里有一个我写的<a href="https://github.com/zkzhao/generator-yi" target="_blank" rel="external">demo</a>，可以参考学习。</p>
-<p>本人学习参考的文章：</p>
-<ol>
-<li><a href="http://www.open-open.com/lib/view/open1460133960139.html" target="_blank" rel="external">使用YEOMAN创建属于自己的前端工作流</a></li>
-<li><a href="https://leozdgao.me/write-yeoman-generator/" target="_blank" rel="external">写一个自己的 Yeoman Generator</a></li>
-<li><a href="https://segmentfault.com/a/1190000005827971" target="_blank" rel="external">yeoman-generator 入门教程</a></li>
-</ol>
 
       
     </div>
@@ -381,7 +368,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Yeoman/" rel="tag">#Yeoman</a>
+            <a href="/tags/React-Native/" rel="tag">#React-Native</a>
           
         </div>
       
@@ -390,13 +377,17 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/06/27/备忘小贴士/" rel="next" title="备忘小贴士">
-                <i class="fa fa-chevron-left"></i> 备忘小贴士
+              <a href="/2016-06-22-docker.html" rel="next" title="Docker学习备忘">
+                <i class="fa fa-chevron-left"></i> Docker学习备忘
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016-06-27-备忘小贴士.html" rel="prev" title="备忘小贴士">
+                备忘小贴士 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -422,8 +413,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/07/12/generator/"
-           data-title="Yeoman 快速构建新项目目录结构脚手架工具" data-url="http://zkzhao.github.io/2016/07/12/generator/">
+      <div class="ds-thread" data-thread-key="2016-06-27-React-Native基于windows的android环境搭建.html"
+           data-title="React-Native基于windows的android环境搭建" data-url="http://zkzhao.github.io/2016-06-27-React-Native基于windows的android环境搭建.html">
       </div>
     
   </div>
@@ -525,7 +516,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装配置"><span class="nav-number">1.</span> <span class="nav-text">安装配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#生命周期"><span class="nav-number">2.</span> <span class="nav-text">生命周期</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#可以使用的模块依赖、工具库"><span class="nav-number">3.</span> <span class="nav-text">可以使用的模块依赖、工具库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#构建思路"><span class="nav-number">4.</span> <span class="nav-text">构建思路</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#注意点一-：翻墙"><span class="nav-number">1.</span> <span class="nav-text">注意点一 ：翻墙</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注意点二-：-SDK-安装不完整"><span class="nav-number">2.</span> <span class="nav-text">注意点二 ： SDK 安装不完整</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注意点三-：-android需要的各种环境变量"><span class="nav-number">3.</span> <span class="nav-text">注意点三 ： android需要的各种环境变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注意点四-：-react-native-init-MyProject-初始化项目，提示node-gyp-rebuild错误"><span class="nav-number">4.</span> <span class="nav-text">注意点四 ： react-native init MyProject 初始化项目，提示node-gyp rebuild错误</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注意点五-：-Android模拟器"><span class="nav-number">5.</span> <span class="nav-text">注意点五 ： Android模拟器</span></a></li></ol></div>
             
           </div>
         </section>
