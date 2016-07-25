@@ -119,7 +119,7 @@
 <meta property="og:image" content="http://7xk7wj.com1.z0.glb.clouddn.com/blog_keycap17.jpg">
 <meta property="og:image" content="http://7xk7wj.com1.z0.glb.clouddn.com/blog_keycap18.jpg">
 <meta property="og:image" content="http://7xk7wj.com1.z0.glb.clouddn.com/blog_keycap19.jpg">
-<meta property="og:updated_time" content="2016-07-25T09:07:02.140Z">
+<meta property="og:updated_time" content="2016-07-25T09:34:48.923Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="私人订制机械键盘 GH60从入门到懵逼">
 <meta name="twitter:description" content="GH60是geekhack论坛上的键盘爱好者自行设计开发制作的一款60%键盘（其pcb方案已开源），其特点主要是支持很多种键位组合，可以根据自己的喜好来组合出不同的键位配列，例如最常用的三种配列方案poker/pure/HHKB的键数分别是61、62、59键。玩GH60的精髓就在于开源和按键可编程，让你可以造出自己的专属键盘。本文目的是带你了解gh60的所有部件，包括一些最新的方案，不涉及安装手">
@@ -344,21 +344,21 @@
 <li>锡焊套装（电烙铁、烙铁架、焊锡丝、吸锡器）</li>
 <li>usb数据线（mini USB、micro USB）</li>
 </ol>
-<h3 id="pcb"><a href="#pcb" class="headerlink" title="pcb"></a>pcb</h3><p>pcb就是印刷线路板，可能大家最长见的pcb就是主板，GH60的pcb方案被<a href="https://github.com/komar007" target="_blank" rel="external">komar007</a>设计并开源后，世界各地出现了众多不同的版本，国内更是出现了很多自己设计并打样的版本方案。</p>
+<h3 id="pcb与元件"><a href="#pcb与元件" class="headerlink" title="pcb与元件"></a>pcb与元件</h3><p>pcb就是印刷线路板，可能大家最长见的pcb就是主板，GH60的pcb方案被<a href="https://github.com/komar007" target="_blank" rel="external">komar007</a>设计并开源后，世界各地出现了众多不同的版本，国内更是出现了很多自己设计并打样的版本方案。</p>
 <blockquote>
 <p>国外 rev.A、rev.B、rev.C 开源方案</p>
 </blockquote>
 <ul>
 <li><p>rev.A版没有led灯位，也就是所谓的护眼板，不会被闪瞎眼，这是出现最早的pcb方案，使用ATMEL MEGA32U4主控芯片，也是目前GH60的通用单片机。支持3脚、5脚轴体，支持各种自定义键位配列方式。<br><img src="http://7xk7wj.com1.z0.glb.clouddn.com/blog_gh60_reva.png" alt="reva"></p>
 </li>
-<li><p>rev.B与rev.C版本的pcb，在pcb上扩展了灯位，支持直插式led普通灯。<br><img src="http://7xk7wj.com1.z0.glb.clouddn.com/blog_pcb_revc.png" alt="revc"></p>
+<li><p>rev.B与rev.C版本的pcb，在pcb上扩展了灯位，支持直插式led普通灯。每个按键由一个轴，一个LED，一个330欧电阻，一个二极管组成，因为330欧电阻是LED的限流电阻，所以如果不需要led灯就不需要LED和330R了，只需要焊轴和二极管，二极管在这里起到一个按键无冲突的作用。Jump4是为了实现LED的功能，所以上面的原件PMOS和电阻都不需要焊，单片机和晶振是大脑，这是必须要的，USB母座是和电脑连接的接口，也十分重要。然后是电容，C4-C8四个电容是电源的滤波电容，让电压稳定没有交流，c1、c2是晶振的电容，让频率稳定。剩下MCU和USB接口接的电阻是按照Datasheet的要求标配的，原理图很简单。<br><img src="http://7xk7wj.com1.z0.glb.clouddn.com/blog_pcb_revc.png" alt="revc"></p>
 </li>
 </ul>
 <blockquote>
 <p>国内未开源方案</p>
 </blockquote>
 <ul>
-<li><p>Satan、菜菜<br>国内玩GH60用的最多的2个PCB版本，都是基于komar007的rev.B开源方案，两者也都是采用atm控制器，支持自定义配列，大键位可以自己设计大小位置。具体刷固件的方法可以自行搜索。<br>最近国内还出现了使用STM32控制器的方案，STM32性能更强，但网上暂时没有自行刷固件的方法，所以需要自定义配列的朋友，在购买PCB时需要问清楚支持哪些键位配列，以及usb母座是mini USB还是micro USB。</p>
+<li><p>Satan、菜菜<br>国内玩GH60用的最多的2个PCB版本，都是基于komar007的rev.B开源方案，两者也都是采用atm控制器，支持自定义配列，大键位可以自己设计大小位置。具体刷固件的方法可以自行搜索。<br>最近国内还出现了使用STM32控制器的方案，STM32性能更强，但网上暂时没有自行刷固件的方法，所以需要自定义配列的朋友，在购买PCB时需要问清楚支持哪些键位配列，以及usb母座是mini USB还是micro USB。<br>另外购买时可选购买焊好元件的PCB板和未焊好元件带元件包的PCB板，如果自己焊接元件，需要由低到高，先焊MCU、贴片原件，可以先不焊二极管，然后可以焊上usb母座连接电脑刷固件看是否有问题。没有问题之后可以焊上二极管，需要LED灯的还要焊上330R电阻。</p>
 </li>
 <li><p>RGB全彩灯贴片版<br>RGB全彩灯版是现在比较新的解决方案，就是在PCB上有贴片式的（也有直插式的）LED光源全彩灯位，可以自由改变灯光颜色亮度，这种PCB方案受众较小，需要自己用心去淘，这也是我做的第一把GH60所用的PCB板。<br><img src="http://7xk7wj.com1.z0.glb.clouddn.com/blog_rgbpcb.jpg" alt=""></p>
 </li>
@@ -602,7 +602,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#“造”出一把键盘都需要什么"><span class="nav-number">1.</span> <span class="nav-text">“造”出一把键盘都需要什么</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#pcb"><span class="nav-number">1.1.</span> <span class="nav-text">pcb</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用配列方案"><span class="nav-number">1.2.</span> <span class="nav-text">常用配列方案</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#定位板、轴体、卫星轴"><span class="nav-number">1.3.</span> <span class="nav-text">定位板、轴体、卫星轴</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#led灯"><span class="nav-number">1.4.</span> <span class="nav-text">led灯</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#外壳"><span class="nav-number">1.5.</span> <span class="nav-text">外壳</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#键帽"><span class="nav-number">1.6.</span> <span class="nav-text">键帽</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#“造”出一把键盘都需要什么"><span class="nav-number">1.</span> <span class="nav-text">“造”出一把键盘都需要什么</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#pcb与元件"><span class="nav-number">1.1.</span> <span class="nav-text">pcb与元件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用配列方案"><span class="nav-number">1.2.</span> <span class="nav-text">常用配列方案</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#定位板、轴体、卫星轴"><span class="nav-number">1.3.</span> <span class="nav-text">定位板、轴体、卫星轴</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#led灯"><span class="nav-number">1.4.</span> <span class="nav-text">led灯</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#外壳"><span class="nav-number">1.5.</span> <span class="nav-text">外壳</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#键帽"><span class="nav-number">1.6.</span> <span class="nav-text">键帽</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
