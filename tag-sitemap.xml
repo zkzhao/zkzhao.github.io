@@ -2,22 +2,8 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>http://zkzhao.github.io/tags/Webpack-Server/</loc>
-        <lastmod>2016-09-05T02:49:09.806Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://zkzhao.github.io/tags/%E6%A8%A1%E5%9D%97%E5%8C%96/</loc>
         <lastmod>2016-09-05T02:51:43.549Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://zkzhao.github.io/tags/Javascript/</loc>
-        <lastmod>2016-09-05T02:53:00.590Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -53,6 +39,20 @@
     <url>
         <loc>http://zkzhao.github.io/tags/Docker/</loc>
         <lastmod>2016-09-05T02:58:03.457Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://zkzhao.github.io/tags/Webpack-Server/</loc>
+        <lastmod>2016-09-06T07:50:21.176Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://zkzhao.github.io/tags/Javascript/</loc>
+        <lastmod>2016-09-06T07:50:21.176Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
