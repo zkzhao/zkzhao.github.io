@@ -9,20 +9,6 @@
     </url>
 
     <url>
-        <loc>http://zkzhao.github.io/tags/React/</loc>
-        <lastmod>2016-09-05T02:55:06.566Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://zkzhao.github.io/tags/React-Native/</loc>
-        <lastmod>2016-09-05T02:55:06.566Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://zkzhao.github.io/tags/GH60/</loc>
         <lastmod>2016-09-05T02:56:00.187Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -53,6 +39,20 @@
     <url>
         <loc>http://zkzhao.github.io/tags/Javascript/</loc>
         <lastmod>2016-09-06T07:50:21.176Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://zkzhao.github.io/tags/React/</loc>
+        <lastmod>2016-09-11T07:33:10.328Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://zkzhao.github.io/tags/React-Native/</loc>
+        <lastmod>2016-09-11T07:33:10.328Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

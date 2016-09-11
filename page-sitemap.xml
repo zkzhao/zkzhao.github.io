@@ -7,6 +7,13 @@
     </url>
     
     <url>
+        <loc>http://zkzhao.github.io/about/</loc>
+        <lastmod>2016-09-09T02:33:23.150Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
         <loc>http://zkzhao.github.io/categories/</loc>
         <lastmod>2016-09-05T02:43:43.705Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -16,13 +23,6 @@
     <url>
         <loc>http://zkzhao.github.io/tags/</loc>
         <lastmod>2016-09-05T02:42:56.501Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>http://zkzhao.github.io/about/</loc>
-        <lastmod>2016-08-16T02:14:30.492Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
