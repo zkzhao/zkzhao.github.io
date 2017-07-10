@@ -115,7 +115,7 @@ font:
 # ---------------------------------------------------------------
 # Sidebar Settings
 # ---------------------------------------------------------------
-reward_comment: 坚持原创技术分享，您的支持将鼓励我继续创作！
+reward_comment: 请zkzhao喝杯咖啡作为鼓励！
 wechatpay: /wechat.jpeg
 alipay: /alipay.jpeg
 
@@ -243,8 +243,9 @@ mathjax:
 #baidu_analytics:
 
 # Disqus
-disqus_shortname: zkzhao-1
-
+# disqus_shortname:
+# 来必力
+livere_uid: MTAyMC8yOTQyOS81OTk3
 # Baidu Share
 # Available value:
 #    button | slide

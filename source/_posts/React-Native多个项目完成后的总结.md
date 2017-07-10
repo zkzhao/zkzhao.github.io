@@ -13,6 +13,7 @@ tags:
 
 1. FlatList 初始化时不显示列表，需要拖拽一下才显示
    当 React Navigation 与 FlatList 配合使用时，会出现初始化时不显示列表的bug，必须要拖拽一下，才会正常显示。
+   <!--more-->
    **解决方案：** 此时需要给FlatList设置`removeClippedSubviews={false}` 属性，即可解决问题(目前最新版0.46貌似已经解决了此bug)，官方文档解释如下：
 > 注意：removeClippedSubviews属性目前是不必要的，而且可能会引起问题。如果你在某些场景碰到内容不渲染的情况（比如使用LayoutAnimation时），尝试设置removeClippedSubviews={false}。我们可能会在将来的版本中修改此属性的默认值。
 
@@ -20,6 +21,7 @@ tags:
    **解决方案：** 给TabNavigator增加`lazy: true` 属性，官方解释，*whether to lazily render tabs as needed as opposed to rendering them upfront*
 
 3. Windows平台下安卓端USB真机调试错误
+
    使用数据线连接电脑，保证手机和电脑在同一局域网下，如果`adb devices`找不到设备，需要确保手机驱动已安装成功（可以使用各类手机助手或`echo 0x2a45 > .android/adb_usb.ini` 尝试安装驱动），building到97%后会报错：
    <!-- more -->
 ```sh
@@ -58,7 +60,8 @@ buildscript {
 ```
 
 4. 没有百分比宽高的解决办法
+
    flex:1 可以相当于 height:100% ；
    alignSelf:'stretch' 可以相当于 width:100% ；
 
-issue： https://github.com/facebook/css-layout/issues/57#ref-issue-86696744
+   issue： https://github.com/facebook/css-layout/issues/57#ref-issue-86696744
