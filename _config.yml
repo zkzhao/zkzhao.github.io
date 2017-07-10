@@ -76,8 +76,6 @@ deploy:
 - type: git
   repo: https://github.com/zkzhao/zkzhao.github.io.git,master
 
-# 多说评论
-duoshuo_shortname: zkzhao
 
 # 压缩min
 html_minifier:
