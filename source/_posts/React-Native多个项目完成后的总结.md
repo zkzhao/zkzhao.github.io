@@ -65,3 +65,6 @@ buildscript {
    alignSelf:'stretch' 可以相当于 width:100% ；
 
    issue： https://github.com/facebook/css-layout/issues/57#ref-issue-86696744
+
+5. TextInput的样式兼容问题
+   android有默认的padding，需要给`padding: 0`，重置一下，才能和ios表现一致。
