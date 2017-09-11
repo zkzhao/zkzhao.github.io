@@ -68,3 +68,10 @@ buildscript {
 
 5. TextInput的样式兼容问题
    android有默认的padding，需要给`padding: 0`，重置一下，才能和ios表现一致。
+
+6. 如何修改Android初始化项目包名？
+
+   * 修改`android/app/build.gradle`里的`applicationId`，为新包名。
+   * 修改`android/app/src/main/AndroidManifest.xml`里的`package`，为新包名。
+   * 在`android/app/src/main/java/com`下根据新包名中多出的层级，新建目录。
+   * 打开`android/app/src/main/java/com/xxx/yyy/myProject/MainActivity.java`和`MainApplication.java`修改第一行为：`package com.xxx.yyy.myproject;`

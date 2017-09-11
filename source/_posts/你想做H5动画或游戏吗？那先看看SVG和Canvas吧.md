@@ -15,6 +15,8 @@ date: 2017-08-14 17:10:43
 
 > 先上结论：经过这几天的摸索发现，动画或2D小游戏可以使用SVG、Canvas。游戏开发使用layaAir或Egret（白鹭），layaAir支持JS，更适合前端开发者。
 
+<!-- more -->
+
 ## CSS3、SVG、Canvas介绍
 1. css3主要用来做过渡动画，可以配合svg和canvas使用。关于css3之前有过一篇文章[Three.js+TweenMax帮你实现骚气的H5动画广告](http://zkzhao.github.io/6IeVPTJlGdtsxb0AAqk6ug.html)，有兴趣的同学可以看下。
 
