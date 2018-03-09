@@ -44,9 +44,9 @@ https://facebook.github.io/react-native/docs/android-setup.html
 [Error] "Could not debug. Unknown error"
 ```
 
-**错误原因：**国产安卓定制系统（例如：魅族Flyme）的错误。
+​	**错误原因：**国产安卓定制系统（例如：魅族Flyme）的错误。
 
-**解决方案：**
+​	**解决方案：**
 	在项目中`android/build.gradle` 如下第8行，版本号改为 1.2.3后重新编译即可解决问题。issue：https://github.com/facebook/react-native/issues/8868
 ```Java
 buildscript {
