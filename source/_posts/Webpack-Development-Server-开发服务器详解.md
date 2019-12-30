@@ -9,7 +9,7 @@ tags:
 abbrlink: hJN-n3Pj0BAbWkD90DFlBg
 date: 2016-09-03 15:39:19
 ---
-![webpack](http://7xk7wj.com1.z0.glb.clouddn.com/blog_webpack.png)
+![webpack](http://qncdn001.189che.com/blog_webpack.png)
 曾经前端工程化的主流方案是使用grunt、gulp作为构建优化工具，使用requirejs、seajs、browserify作为模块化开发工具，构建工具与模块工具相互配合，实现了前后端分离开发的一种工程化解决方案。现如今只需要webpack就可以实现前端工程化所需的大多数功能（和npm script配合使用效果更佳），小而美**VS**大而全。
 
 本文适合对模块化、前后端分离有一定了解的读者，最好懂得一些webpack、node、express的基础相关知识。需要深入了解webpack配置方法的读者可以进入文章末尾链接继续学习。

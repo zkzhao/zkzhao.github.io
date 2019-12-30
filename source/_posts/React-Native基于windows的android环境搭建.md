@@ -10,7 +10,7 @@ abbrlink: WgwKKbS8Bx1ODUkoxn0EeQ
 date: 2016-06-27 15:15:52
 update: 2016-09-11 10:35:19
 ---
-![reactnative](http://7xk7wj.com1.z0.glb.clouddn.com/blog_react-native.png)
+![reactnative](http://qncdn001.189che.com/blog_react-native.png)
 
 对于React Native来说，IOS才是亲儿子，如果你是一名初学者，想按照教程在Windows系统下搭建Android环境，根本不用担心它会一次性成功让你没有折腾的机会，你只需要担心那么多问题你是不是能一一解决，在开始前就应该有它会报错报错报错不停报错的觉悟，下面我就把自己遇到的问题与解决的方法记录下来，希望对大家能有所帮助。
 本文适合对node、android开发有一定基础的读者。
@@ -53,7 +53,7 @@ JAVA和Android的环境变量，一个都不能少，不然会提示找不到SDK
 
 查了一下node-gyp的资料，发现这是一个新版本node自带的c++编译扩展包，它需要c++和python的编译环境，我的工作电脑上有Microsoft Visual C++ 2013 Redistributable和python2.7，还安装了Cygwin（初期windows平台安装node需要借助Cygwin来安装，后来微软和node的作者一起合作，才有了现在的node安装包）,依然没有解决报错的问题，计划日后深入学习node后再来填这个坑，错误如下：
 
-![init error](http://7xk7wj.com1.z0.glb.clouddn.com/blog_gyperror.jpg)
+![init error](http://qncdn001.189che.com/blog_gyperror.jpg)
 
 > 更新： 已经找到解决方案：https://github.com/nodejs/node-gyp#installation
 > 1、全局安装node-gyp，`npm install -g node-gyp`
@@ -72,7 +72,7 @@ JAVA和Android的环境变量，一个都不能少，不然会提示找不到SDK
 
 打开Genymotion，在CMD命令行输入`adb devices` 查看当前可使用的安卓虚拟器列表，结果为空，说明确实没有，网上查了下，需要在setting的ADB下选中 `Use custom Android SDK tools` ，然后选择自己的SDK目录，换个姿势再来一次，什么？还是报错！准备放弃治疗了，重启电脑再试最后一次，没想到成功运行起来了。
 
-![adb -l](http://7xk7wj.com1.z0.glb.clouddn.com/blog_adblist.jpg)
+![adb -l](http://qncdn001.189che.com/blog_adblist.jpg)
 
 都还没开始写代码，只是配置环境，就这么麻烦，所以还是建议有条件的朋友，在mac平台上进行开发，毕竟react native的团队都是使用mac的，不怎么管windows的死活。
 

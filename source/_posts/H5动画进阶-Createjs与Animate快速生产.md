@@ -98,7 +98,7 @@ mc 拖入舞台，可以使用实例名称，未拖入舞台，使用类链接
 
 mc 实例名称： 在mc属性栏
 
-![图片](http://7xk7wj.com1.z0.glb.clouddn.com/anpic.png)
+![图片](http://qncdn001.189che.com/anpic.png)
 
 
 

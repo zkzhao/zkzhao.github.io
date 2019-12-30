@@ -9,7 +9,7 @@ abbrlink: hqckC3dhDhXtLKvoQepIvA
 date: 2016-07-25 16:30:49
 ---
 
-![keyboard](http://7xk7wj.com1.z0.glb.clouddn.com/blog_keyboardBanner.jpg)
+![keyboard](http://qncdn001.189che.com/blog_keyboardBanner.jpg)
 
 GH60是[geekhack](https://geekhack.org)论坛上的键盘爱好者自行设计开发制作的一款60%键盘（其pcb方案已开源），其特点主要是支持很多种键位组合，可以根据自己的喜好来组合出不同的键位配列，例如最常用的三种配列方案poker/pure/HHKB的键数分别是61、62、59键。玩GH60的精髓就在于开源和按键可编程，让你可以造出自己的专属键盘。本文目的是带你了解gh60的所有部件，包括一些最新的方案，不涉及安装手法，想深入了解的朋友可以在文章底部留言与我交流。
 <!-- more -->
@@ -31,10 +31,10 @@ pcb就是印刷线路板，可能大家最长见的pcb就是主板，GH60的pcb�
 > 国外 rev.A、rev.B、rev.C 开源方案
 
 * rev.A版没有led灯位，也就是所谓的护眼板，不会被闪瞎眼，这是出现最早的pcb方案，使用ATMEL MEGA32U4主控芯片，也是目前GH60的通用单片机。支持3脚、5脚轴体，支持各种自定义键位配列方式。
-![reva](http://7xk7wj.com1.z0.glb.clouddn.com/blog_gh60_reva.png)
+![reva](http://qncdn001.189che.com/blog_gh60_reva.png)
 
 * rev.B与rev.C版本的pcb，在pcb上扩展了灯位，支持直插式led普通灯。每个按键由一个轴，一个LED，一个330欧电阻，一个二极管组成，因为330欧电阻是LED的限流电阻，所以如果不需要led灯就不需要LED和330R了，只需要焊轴和二极管，二极管在这里起到一个按键无冲突的作用。Jump4是为了实现LED的功能，所以上面的原件PMOS和电阻都不需要焊，单片机和晶振是大脑，这是必须要的，USB母座是和电脑连接的接口，也十分重要。然后是电容，C4-C8四个电容是电源的滤波电容，让电压稳定没有交流，c1、c2是晶振的电容，让频率稳定。剩下MCU和USB接口接的电阻是按照Datasheet的要求标配的，原理图很简单。
-![revc](http://7xk7wj.com1.z0.glb.clouddn.com/blog_pcb_revc.png)
+![revc](http://qncdn001.189che.com/blog_pcb_revc.png)
 
 > 国内未开源方案
 
@@ -45,15 +45,15 @@ pcb就是印刷线路板，可能大家最长见的pcb就是主板，GH60的pcb�
 
 * RGB全彩灯贴片版
 RGB全彩灯版是现在比较新的解决方案，就是在PCB上有贴片式的（也有直插式的）LED光源全彩灯位，可以自由改变灯光颜色亮度，这种PCB方案受众较小，需要自己用心去淘，这也是我做的第一把GH60所用的PCB板。
-![](http://7xk7wj.com1.z0.glb.clouddn.com/blog_rgbpcb.jpg)
+![](http://qncdn001.189che.com/blog_rgbpcb.jpg)
 
 * BLE60 蓝牙无线方案
 BLE60据说是第一个GH60无线解决方案，即在原有pcb方案上增加了蓝牙4.0模块和一块电池，因为之前的蓝牙通讯都太耗电了，所以它从底层就抛弃了原来的蓝牙物理层，也就是说蓝牙4.0无法和不支持蓝牙4.0的设备进行配对。支持蓝牙4.0的手机和平板都可以使用，电脑可以买个蓝牙4.0的适配器。
-![](http://7xk7wj.com1.z0.glb.clouddn.com/blog_ble60.jpg)
+![](http://qncdn001.189che.com/blog_ble60.jpg)
 
 * 优联无线方案
 优联是罗技的无线技术，相比BLE60的优点是抗干扰能力强于蓝牙、续航超强，两节AAA电池用一到两年、唤醒速度比蓝牙快，从节能休眠状态中唤醒几乎感觉不到明显延迟，不过就是需要一个接收器。
-![](http://7xk7wj.com1.z0.glb.clouddn.com/blog_youlian.jpg)
+![](http://qncdn001.189che.com/blog_youlian.jpg)
 
 ### 常用配列方案
 自定义配列方案可以说是玩GH60的精髓，因为自己组一套GH60的花费并不比买一把机械键盘低，但是有情怀的人都希望拥有一把自定义键位的键盘。
@@ -61,22 +61,22 @@ BLE60据说是第一个GH60无线解决方案，即在原有pcb方案上增加�
 > poker(winkey)
 
 键帽收集器，配合键帽外观很漂亮。主要标志就是左下角3个等宽的Ctrl-Win-Alt和右下角4个等长Alt-Fn-Menu-Ctrl。右Shift是一根完整的。且比左侧Shift长。
-![poker](http://7xk7wj.com1.z0.glb.clouddn.com/blog_1.25x%20ANSI%20POKER.jpg)
+![poker](http://qncdn001.189che.com/blog_1.25x%20ANSI%20POKER.jpg)
 
 > pure(winkey+1.75)
 
 pure 把右侧Shift倍分成了1个1.75x的Shift和1个1倍的。一般是fn或del，其余部分与winkey完全相同。喜欢单独“↑”“↓”“←”“→”键的朋友可以用这套配列，把1.75x的Shift变为“↑”，下面的Fn-Menu-Ctrl变成“←”“↓”“→”。
-![pure](http://7xk7wj.com1.z0.glb.clouddn.com/blog_1.25x%20ANSI%20Pure.jpg)
+![pure](http://qncdn001.189che.com/blog_1.25x%20ANSI%20Pure.jpg)
 
 > iso 大回车键位
 
 这个配列适合习惯使用大回车键的朋友，我觉得也很实用。
-![iso](http://7xk7wj.com1.z0.glb.clouddn.com/blog_1.5x%20ISO%20split%20shift%20full.jpg)
+![iso](http://qncdn001.189che.com/blog_1.5x%20ISO%20split%20shift%20full.jpg)
 
 > hhkb
 
 HHKB配列一向被称为程序员神器，它的键位设计原则就是：尽量少去移动手，这一点和vim的原则一样，所有的动作都在一个较小的范围内完成。
-![hhkb](http://7xk7wj.com1.z0.glb.clouddn.com/blog_1.5x%20ANSI%20HHKB%20rev2.jpg)
+![hhkb](http://qncdn001.189che.com/blog_1.5x%20ANSI%20HHKB%20rev2.jpg)
 
 
 ### 定位板、轴体、卫星轴
@@ -107,75 +107,75 @@ HHKB配列一向被称为程序员神器，它的键位设计原则就是：尽�
 
 Z大的作品都是以金属为材料，如紫铜、铝合金、钛合金，采用CNC加工、阳极氧化的方式制成。不过因为紫铜易氧化，钛合金难加工的问题，这两种材质的键帽产量比较小。而铝合金阳极氧化键帽，因为氧化厂调色的问题，导致每批产品都有色差，像十字键帽，貌似现在都有十几种颜色了。如果想收集全的话，的确是笔不小的花费。另外一个问题就是：山寨。只要拿到实物尺寸，CNC加工就不是什么难题，这就导致现在淘宝现货的基本都是山寨产品，这点请新手特别注意。
 从上至下，从左至右：铝十字、紫铜&钛十字、陨石十字、钢铁侠、卡卡西、忍者神龟。
-![](http://7xk7wj.com1.z0.glb.clouddn.com/blog_keycap1.jpg)
+![](http://qncdn001.189che.com/blog_keycap1.jpg)
 
 装上键盘的实际效果。
-![](http://7xk7wj.com1.z0.glb.clouddn.com/blog_keycap2.jpg)
+![](http://qncdn001.189che.com/blog_keycap2.jpg)
 
 > 榔头
 
 感觉榔头在键帽圈颇有带头大哥的意思，之前的代表作鬼头星云和暗黑血统，也被炒成了海景房，还有价无市。
 某位土豪的珍藏，这的值多少钱啊 
 
-![](http://7xk7wj.com1.z0.glb.clouddn.com/blog_keycap3.jpg)
+![](http://qncdn001.189che.com/blog_keycap3.jpg)
 
 三色鬼头、四色鬼头、双色榔头、三色男爵、四色四叶草。
-![](http://7xk7wj.com1.z0.glb.clouddn.com/blog_keycap4.jpg)
+![](http://qncdn001.189che.com/blog_keycap4.jpg)
 一定要注意的是：树脂鬼头和男爵系列，之前实在太受欢迎，价格翻倍了还有很多人买不到，导致市面上出现了大量的翻模产品，有的已经到了几可乱真的程度。所以这两款产品，购买时务必要擦亮眼睛，千万小心。
 
 > 橙子
 
 橙子之前的键帽都是在3D打印的基础上，再经过喷涂补土、手工打磨、调色喷漆制作完成的，优良的设计加上精细的做工，吸引了一大票的帽友，成立了名为“藏键阁”的地下组织 
 先放一波毒图。
-![](http://7xk7wj.com1.z0.glb.clouddn.com/blog_keycap5.jpg)
+![](http://qncdn001.189che.com/blog_keycap5.jpg)
 
 橙子键帽的题材还是比较丰富的，下面我们就一一来看下。
 1～6是反应堆1，7～12是反应堆2。
-![](http://7xk7wj.com1.z0.glb.clouddn.com/blog_keycap6.jpg)
+![](http://qncdn001.189che.com/blog_keycap6.jpg)
 
 侧刻玫瑰
-![](http://7xk7wj.com1.z0.glb.clouddn.com/blog_keycap7.jpg)
+![](http://qncdn001.189che.com/blog_keycap7.jpg)
 
 探照灯。第一排是铜探照灯，第二排是普通版，最后是榔头合作版。
-![](http://7xk7wj.com1.z0.glb.clouddn.com/blog_keycap8.jpg)
+![](http://qncdn001.189che.com/blog_keycap8.jpg)
 
 万字和吉翁公爵。万字也有铜版的了。
-![](http://7xk7wj.com1.z0.glb.clouddn.com/blog_keycap9.jpg)
+![](http://qncdn001.189che.com/blog_keycap9.jpg)
 
 炼成阵1～5，炼成5没找到实物，只能拿设计图代替了
-![](http://7xk7wj.com1.z0.glb.clouddn.com/blog_keycap10.jpg)
+![](http://qncdn001.189che.com/blog_keycap10.jpg)
 
 第一排：男爵、战神；第二排：死神代理证、青天八一；第三排：银字、打字机、高达。
-![](http://7xk7wj.com1.z0.glb.clouddn.com/blog_keycap11.jpg)
+![](http://qncdn001.189che.com/blog_keycap11.jpg)
 
 > HfCx
 
 HfCx团队每隔一段时间都会推出一类主题键帽，采用3D打印、喷涂上色的工艺，优点是题材较新颖，套装好看不贵，不足之处呢，是做工略粗糙，表面有加工纹理，键帽只有OEM高度，无原厂高度。
 HC漫威套。
-![](http://7xk7wj.com1.z0.glb.clouddn.com/blog_keycap12.jpg)
+![](http://qncdn001.189che.com/blog_keycap12.jpg)
 
 吃豆人&小黄人。
-![](http://7xk7wj.com1.z0.glb.clouddn.com/blog_keycap13.jpg)
+![](http://qncdn001.189che.com/blog_keycap13.jpg)
 
 榔头哥合作键帽，和钛鬼放一块，怎么看都有一丝SZ的味道。
-![](http://7xk7wj.com1.z0.glb.clouddn.com/blog_keycap14.jpg)
+![](http://qncdn001.189che.com/blog_keycap14.jpg)
 
 HC还接受简单图案的私人订制，打造属于自己的个性键帽。虽然名额有限，但仍供不应求。
 私人订制，这个我也不知是什么图案，好想要个。
-![](http://7xk7wj.com1.z0.glb.clouddn.com/blog_keycap15.jpg)
+![](http://qncdn001.189che.com/blog_keycap15.jpg)
 
 > 小鱼和CC
 
 这两位都是有钱的主，有自己的加工厂，做个把键帽只能算是两位的不务正业了。因为本身就从事机加工，技术方面不成问题，又舍得花时间调机，所以产品质量很不错。
 小鱼键帽。左列：盾心、炉石、生化。右列：惩戒者(烧蓝)。
-![](http://7xk7wj.com1.z0.glb.clouddn.com/blog_keycap16.jpg)
+![](http://qncdn001.189che.com/blog_keycap16.jpg)
 
 CC的进击的巨人，尤其是钛巨人，绝对是不可多得的精品，可惜以后CC不会再做了。
-![](http://7xk7wj.com1.z0.glb.clouddn.com/blog_keycap17.jpg)
+![](http://qncdn001.189che.com/blog_keycap17.jpg)
 
 CC的其它键帽，我最喜欢的蜘蛛键帽，先喷砂再氧化，手感好到爆 
-![](http://7xk7wj.com1.z0.glb.clouddn.com/blog_keycap18.jpg)
+![](http://qncdn001.189che.com/blog_keycap18.jpg)
 
 > Cavanlx 收藏秀
 
-![](http://7xk7wj.com1.z0.glb.clouddn.com/blog_keycap19.jpg)
+![](http://qncdn001.189che.com/blog_keycap19.jpg)

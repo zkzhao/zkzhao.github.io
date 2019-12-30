@@ -11,7 +11,7 @@ date: 2016-07-12 16:16:21
 
 因为工作中经常需要创建新的项目目录（不要问我为什么），每次开始新的项目都需要新建一次前端目录结构、流程化构建等等，后来发现使用Yeoman新建别工程目录很方便，就想自己也定制一套，慢慢完善。
 
-![yeoman脚手架](http://7xk7wj.com1.z0.glb.clouddn.com/blog_yeoman.jpg)
+![yeoman脚手架](http://qncdn001.189che.com/blog_yeoman.jpg)
 
 ## 安装配置
 *  全局安装yo和yeoman-generator： `npm install -g yo ` ， ` npm install --save yeoman-generator`

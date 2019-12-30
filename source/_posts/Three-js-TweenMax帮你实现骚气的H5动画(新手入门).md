@@ -22,7 +22,7 @@ date: 2016-11-02 15:30:18
 ## 补间动画和CSS3 3D转换
 既然前2种方法中的视频制作对我们来说有些难度，那我们还是回归本质，运用自己最擅长的css和js来解决问题。
 
-![](http://7xk7wj.com1.z0.glb.clouddn.com/blog_zaowujie.png)
+![](http://qncdn001.189che.com/blog_zaowujie.png)
 
 看到这张**淘宝造物节作者**的聊天记录截图，瞬间感觉被开启了新世界的大门，原来造物节广告是利用css3 3d转换实现的全景伪3d，不得不佩服这位设计师大神的智慧，把css3玩出了新的高度。他使用动画库jstween、css3d、陀螺仪orienter.js（用于横竖屏重力感应）等技术完成了这部作品。那我们先从简单的开始研究，jstween动画库是造物节作者自己封装的一个js动画库，适合设计大师的不一定适合自己，我们还是选个文档齐全点的来玩吧。要做补间动画最重要的就是timeline，GSAP的TimeLineMax库可以很方便的管理时间轴动画，但是GSAP提供了TweenLite.js、TweenMax.js、TimelineLite.js和TimelineMax.js 4个文件，不用一脸懵逼，下面就介绍一下这些引用库文件都是做什么的。
 
@@ -33,7 +33,7 @@ date: 2016-11-02 15:30:18
 
 因此，如果想要简单地引入GSAP的主体功能，使用TweenMax.js这一个文件即可。而如果要争取更小的库文件大小，应该使用TweenLite.js（必需）+ 其他文件的组合。下面是它们的重叠包含关系图。
 
-![](http://7xk7wj.com1.z0.glb.clouddn.com/blog_2259286548-5748f6ff2ca90_articlex.png)
+![](http://qncdn001.189che.com/blog_2259286548-5748f6ff2ca90_articlex.png)
 
 搞明白这些概念之后，剩下的就简单了，只需要打开 [文档](http://greensock.com/tweenlite) ，做几个Deom就什么都会了（毕竟更深的东西暂时也用不到）。下面给出一个简单的时间轴实现代码，只需要to to to to.....就完成了，是不是很容易。
 ```javascript

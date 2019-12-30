@@ -11,7 +11,7 @@ date: 2018-03-09 14:35:21
 
 2年前写过一篇快速搭建项目的文章 [Yeoman 快速构建新项目目录结构脚手架工具](http://zkzhao.github.io/W4LWuSjK512T0L1Ni5Ws_w.html) 。最近借鉴vue-cli的思路，脱离Yeoman，重新写了一个CLI工具。本文将关于Node CLI的知识点记录下来，适合有NodeJS基础的读者。[源码地址](https://github.com/zkzhao/dogo-cli)
 
-![gif](http://7xk7wj.com1.z0.glb.clouddn.com/blog_nodecli.gif)
+![gif](http://qncdn001.189che.com/blog_nodecli.gif)
 
 ## Shebang
 ```js

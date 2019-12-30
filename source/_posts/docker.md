@@ -10,7 +10,7 @@ abbrlink: qwlXi3BTkHM8Jodq9bA2Ig
 date: 2016-06-22 16:47:21
 ---
 
-![docker](http://7xk7wj.com1.z0.glb.clouddn.com/blog_docker.png)
+![docker](http://qncdn001.189che.com/blog_docker.png)
 
 
 ## docker 需要注意的事情：
